@@ -1,0 +1,91 @@
+body{
+    height: 300px;
+    width:300px;
+    background-color: cyan;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+    background-image: url("https://i.insider.com/60cb99b320bd1300181c6ef2?width=1200&format=jpeg");
+}
+.signuppage{
+    margin-left:900px; 
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+#signup{
+    border-radius: 20px;
+    color:white;
+    background-color: red;
+    border: 2px solid red;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        gap: 10px;
+        /* margin-top: 50px;
+        margin-left: -330px; */
+        /* background-repeat: repeat; */
+    }
+
+    .signuppage {
+        margin-top: 100px;
+        margin-right: 350px;
+        width: 90%;
+        gap: 10px;
+    }
+
+    #signup {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        margin-top: 0px;
+        /* margin-right: 350px; */
+    }
+}
+
+/* Tablet Devices (601px to 1024px width) */
+@media (max-width: 1024px) {
+    body {
+        background-size: cover;
+        
+    }
+
+    .signuppage {
+        margin-top: 300px;
+        margin-left: 400px;
+        width: 70%;
+    }
+
+    #signup {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Large Screens (1025px and above) */
+@media (min-width: 1025px) {
+    body {
+        background-size: cover;
+        background-repeat:no-repeat;
+        
+    }
+    .signuppage {
+        margin-left: 700px;
+        margin-top: 250px;
+        width: 400px;
+    }
+
+    #signup {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
