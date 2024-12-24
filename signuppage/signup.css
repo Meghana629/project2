@@ -1,6 +1,5 @@
 body{
-    height: 300px;
-    width:300px;
+    
     background-color: cyan;
     display:flex;
     flex-direction: column;
@@ -10,8 +9,11 @@ body{
     background-image: url("https://i.insider.com/60cb99b320bd1300181c6ef2?width=1200&format=jpeg");
 }
 .signuppage{
-    margin-left:900px; 
-    margin-top: 200px;
+    height:400px;
+    width:400px;
+    background-color: white;
+    margin-left:100px; 
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,72 +22,97 @@ body{
     
 }
 #signup{
+   
     border-radius: 20px;
     color:white;
-    background-color: red;
-    border: 2px solid red;
+    background-color: blue;
+    border: 2px solid blue;
     padding: 10px;
+    width: 100px;
 }
-
-@media (max-width: 600px) {
-    body {
-        background-size: cover;
-        gap: 10px;
-        /* margin-top: 50px;
-        margin-left: -330px; */
-        /* background-repeat: repeat; */
-    }
-
-    .signuppage {
-        margin-top: 100px;
-        margin-right: 350px;
-        width: 90%;
-        gap: 10px;
-    }
-
-    #signup {
-        width: 100%;
-        padding: 8px;
-        font-size: 14px;
-        margin-top: 0px;
-        /* margin-right: 350px; */
-    }
+#name{
+    border-radius: 20px;
+    border: 2px solid grey;
 }
+#email{
+    border-radius: 20px;
+    border: 2px solid grey;
+}
+#password{
+    border-radius: 20px;
+    border: 2px solid grey;
+}
+input{
+    font-size: larger;
+}
+   
 
-/* Tablet Devices (601px to 1024px width) */
 @media (max-width: 1024px) {
     body {
-        background-size: cover;
-        
+        gap: 15px;
     }
 
     .signuppage {
-        margin-top: 300px;
-        margin-left: 400px;
-        width: 70%;
+        width: 350px;
+        margin-left: 0;
+        margin-top: 50px;
+        height: auto;
     }
 
     #signup {
-        padding: 12px;
-        font-size: 16px;
+        width: 90px;
+        font-size: 14px;
+    }
+
+    input {
+        font-size: medium;
     }
 }
 
-/* Large Screens (1025px and above) */
-@media (min-width: 1025px) {
+/* Mobile Styles (less than 768px) */
+@media (max-width: 768px) {
     body {
-        background-size: cover;
-        background-repeat:no-repeat;
-        
+        gap: 10px;
     }
+
     .signuppage {
-        margin-left: 700px;
-        margin-top: 250px;
-        width: 400px;
+        width: 300px;
+        margin-left: 0;
+        margin-top: 30px;
+        padding: 15px;
     }
 
     #signup {
-        font-size: 18px;
-        padding: 12px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    input {
+        font-size: small;
+    }
+}
+
+/* Mobile Small Screens (less than 480px) */
+@media (max-width: 480px) {
+    body {
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .signuppage {
+        width: 90%;
+        height: auto;
+        gap: 10px;
+    }
+
+    #signup {
+        width: 70px;
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    input {
+        font-size: smaller;
+        padding: 5px;
     }
 }
