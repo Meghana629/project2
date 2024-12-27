@@ -13,11 +13,11 @@ button.addEventListener("click",(e)=>{
     localStorage.setItem("name",namevalue)
     localStorage.setItem("email",emailvalue)
     localStorage.setItem("password",passwordvalue)
-    const namepattern=/^[a-zA-z]{3,}$/
+    const namepattern=/^[a-zA-z" "]{3,}$/
     const emailpattern=/^[a-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,}$/
     const passwordpattern=/^[a-zA-Z0-9.*][a-zA-Z\d]{8,}$/
     if (!namepattern.test(name.value)){
-        errormessage.textContent="please enter valid name"
+        errormessage.textContent="please enter atleast 9 charcters of your name"
         return;
     }
     if (!emailpattern.test(email.value)){
@@ -25,7 +25,7 @@ button.addEventListener("click",(e)=>{
         return;
     }
     if (!passwordpattern.test(password.value)){
-        errormessage.textContent="please enter valid password"
+        errormessage.textContent="please enter atleast 9 characters valid password"
         return
     }
     errormessage.textContent=""
